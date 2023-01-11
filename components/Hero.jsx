@@ -4,7 +4,7 @@ import { BsDiscord, BsTwitter, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="bg-blue-500 rounded-t-lg">
+    <div className="rounded-t-lg bg-blue-500">
       <div className="mx-auto max-w-screen-2xl px-4 py-6 sm:py-8 md:px-8 lg:py-12">
         <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-6 lg:flex-row">
           <div className="flex flex-col justify-between md:justify-around xl:w-1/3">
@@ -25,14 +25,14 @@ const Hero = () => {
                 ride, I will gaurentee that right now. Stick around, check me
                 out and enjoy!!
               </p>
-              <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
+              <div className="flex w-full flex-col gap-2.5 pt-2 sm:flex-row sm:justify-center lg:justify-start">
                 <Button
-                  color="danger"
-                  className="w-full"
+                  color="primary"
+                  className="w-full border-2 border-gray-200"
                 >
                   Whats New
                 </Button>
-                <Button color="danger">Danger</Button>
+                <Button color="primary">Contact!</Button>
               </div>
             </div>
 

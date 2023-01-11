@@ -37,6 +37,7 @@ export default function NewsLetter() {
               />
               <Button
                 type="submit"
+                color="primary"
                 className="mt-3 flex w-full items-center justify-center rounded-md border border-transparent px-5 py-3 text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
               >
                 Notify me

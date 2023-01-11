@@ -128,10 +128,10 @@ export default function ArticleCard({
           {title}
         </h3>
         <StatsWrapper>
-          <CgReadme className="inline-flex items-center text-xl text-gray-500" />
+          <CgReadme className="inline-flex items-center text-gray-500" />
           <CardStats>{readingTime}</CardStats>
           <RxDotFilled className="inline-flex items-center text-xl text-gray-500" />
-          <CgCalendarDates className="inline-flex items-center text-xl text-gray-500" />
+          <CgCalendarDates className="inline-flex items-center text-gray-500" />
           <CardStats>{dateTime}</CardStats>
         </StatsWrapper>
         <p class="text-xl  text-black line-clamp-3">{description}</p>
@@ -161,7 +161,7 @@ const style = {
   cardStats: `inline-flex items-center text-sm text-gray-500`,
   statsWrapper: `flex justify-between py-0.5 px-2`,
   cardLinkWrapper: `m-2 mb-4 flex justify-end`,
-  cardImageWrapper: `aspect-w-3 aspect-h-2 overflow-hidden rounded-lg group-hover:opacity-75 lg:aspect-w-2 lg:aspect-h-1`,
+  cardImageWrapper: `aspect-w-3 aspect-h-2 overflow-hidden rounded-t-lg group-hover:opacity-75 lg:aspect-w-2 lg:aspect-h-1`,
 };
 
 const inlineStyle = {
