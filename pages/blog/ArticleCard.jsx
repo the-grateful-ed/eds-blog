@@ -87,7 +87,7 @@ export default function ArticleCard({
     // </CardImageWraper>
 
     //     <CardBody>
-    //       <CardCategory>{category}</CardCategory>
+    // <CardCategory>{category}</CardCategory>
     //       <CardTitle>{title}</CardTitle>
     // <StatsWrapper>
     //   <CgReadme />
@@ -122,7 +122,8 @@ export default function ArticleCard({
           className="h-full w-full object-cover"
         />
       </CardImageWraper>
-      <div class="flex flex-auto flex-col gap-y-2  p-2 pb-4 text-center">
+      <div class="flex flex-auto flex-col gap-y-2  p-2 pb-4 ">
+        <CardCategory>{category}</CardCategory>
         <h3 class="text-semibold text-xl text-blue-900 line-clamp-1">
           {title}
         </h3>
@@ -155,7 +156,7 @@ const style = {
   cardBody: `block flex-grow flex-shrink px-2 py-1`,
   cardTitle: `font-medium text-gray-700 my-2 text-xl leading-tight line-clamp-1 overflow-hidden`,
   cardText: `text-gray-500 my-1 line-clamp-2 flex-grow`,
-  cardCategory: `rounded-lg border-2 border-blue-400 bg-white py-0.5 text-sm font-bold text-blue-500 shadow text-center`,
+  cardCategory: `rounded-lg border-2 border-blue-400 bg-white py-0.5 text-sm font-bold text-blue-500 shadow text-center line-clamp-1`,
   cardLink: `inline-flex items-center text-blue-500 justify-end`,
   cardStats: `inline-flex items-center text-sm text-gray-500`,
   statsWrapper: `flex justify-between py-0.5 px-2`,
