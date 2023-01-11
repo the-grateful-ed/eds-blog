@@ -1,6 +1,6 @@
 function Divider({ children, ...props }) {
   return (
-    <div className="relative">
+    <div className="relative py-4">
       <div
         className="absolute inset-0 flex items-center"
         aria-hidden="true"
