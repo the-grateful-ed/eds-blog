@@ -22,7 +22,7 @@ export const Navbar = () => {
           href="/"
           className="flex items-center"
         >
-          <div className="rotate-[-4deg] bg-gray-500 py-4 px-6 shadow-lg shadow-blue-500">
+          <div className="rotate-[-4deg] bg-blue-500 py-4 px-3 shadow-xl">
                  <h1 className="rotate-[4deg] text-5xl font-extrabold tracking-tighter text-white">
             edndacomputer
           </h1>
