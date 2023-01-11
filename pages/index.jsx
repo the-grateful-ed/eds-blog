@@ -1,5 +1,5 @@
 import Head from "next/head";
-import ArticleCard from "../components/ArticleCard";
+import ArticleCard from "./blog/ArticleCard";
 import { allArticles } from "contentlayer/generated";
 import { select } from "../utils/select";
 import Hero from "../components/Hero";
