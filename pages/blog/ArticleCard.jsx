@@ -74,39 +74,78 @@ export default function ArticleCard({
   readingTime,
 }) {
   return (
-    <div className="w-full">
-      <Card>
+    // <div className="w-full">
+    //   <Card>
+    // <CardImageWraper>
+    //   <img
+    //     src={image}
+    //     alt="image"
+    //     width={1200}
+    //     height={600}
+    //     className="h-full w-full"
+    //   />
+    // </CardImageWraper>
+
+    //     <CardBody>
+    //       <CardCategory>{category}</CardCategory>
+    //       <CardTitle>{title}</CardTitle>
+    // <StatsWrapper>
+    //   <CgReadme />
+    //   <CardStats>{readingTime}</CardStats>
+    //   <RxDotFilled className="text-OuterSpace-700 inline-flex items-center text-xl" />
+    //   <CgCalendarDates />
+    //   <CardStats>{dateTime}</CardStats>
+    // </StatsWrapper>
+    //       <CardText>{description}</CardText>
+    // <CardLinkWraper>
+    //   <CardLink>
+    //     <Link
+    //       className="inline-flex items-center px-1 text-xl"
+    //       href={`/blog/${slug}`}
+    //     >
+    //       <span className="px-1">Read More</span>
+    //       <FiArrowRight />
+    //     </Link>
+    //   </CardLink>
+    // </CardLinkWraper>
+    //     </CardBody>
+    //   </Card>
+    // </div>
+
+    <div class="flex flex-col rounded-xl bg-gray-50">
+      <CardImageWraper>
         <img
           src={image}
           alt="image"
           width={1200}
           height={600}
-          className="h-auto max-w-full rounded-lg"
+          className="h-full w-full object-cover"
         />
-        <CardBody>
-          <CardCategory>{category}</CardCategory>
-          <CardTitle>{title}</CardTitle>
-          <StatsWrapper>
-            <CgReadme />
-            <CardStats>{readingTime}</CardStats>
-            <RxDotFilled className="text-OuterSpace-700 inline-flex items-center text-xl" />
-            <CgCalendarDates />
-            <CardStats>{dateTime}</CardStats>
-          </StatsWrapper>
-          <CardText>{description}</CardText>
-          <CardLinkWraper>
-            <CardLink>
-              <Link
-                className="inline-flex items-center px-1 text-xl"
-                href={`/blog/${slug}`}
-              >
-                <span className="px-1">Read More</span>
-                <FiArrowRight />
-              </Link>
-            </CardLink>
-          </CardLinkWraper>
-        </CardBody>
-      </Card>
+      </CardImageWraper>
+      <div class="flex flex-auto flex-col gap-y-2  p-2 pb-4 text-center">
+        <h3 class="text-semibold text-xl text-blue-900 line-clamp-1">
+          {title}
+        </h3>
+        <StatsWrapper>
+          <CgReadme className="inline-flex items-center text-xl text-gray-500" />
+          <CardStats>{readingTime}</CardStats>
+          <RxDotFilled className="inline-flex items-center text-xl text-gray-500" />
+          <CgCalendarDates className="inline-flex items-center text-xl text-gray-500" />
+          <CardStats>{dateTime}</CardStats>
+        </StatsWrapper>
+        <p class="text-xl  text-black line-clamp-3">{description}</p>
+      </div>
+      <CardLinkWraper>
+        <CardLink>
+          <Link
+            className="inline-flex items-center px-1 text-xl"
+            href={`/blog/${slug}`}
+          >
+            <span className="px-1">Read More</span>
+            <FiArrowRight />
+          </Link>
+        </CardLink>
+      </CardLinkWraper>
     </div>
   );
 }
@@ -114,13 +153,14 @@ export default function ArticleCard({
 const style = {
   card: `relative flex flex-col border-2 border-gray-200 rounded-lg bg-white`,
   cardBody: `block flex-grow flex-shrink px-2 py-1`,
-  cardTitle: `font-medium text-gray-700 mb-1`,
-  cardText: `text-gray-500 my-1`,
+  cardTitle: `font-medium text-gray-700 my-2 text-xl leading-tight line-clamp-1 overflow-hidden`,
+  cardText: `text-gray-500 my-1 line-clamp-2 flex-grow`,
   cardCategory: `rounded-lg border-2 border-blue-400 bg-white py-0.5 text-sm font-bold text-blue-500 shadow text-center`,
   cardLink: `inline-flex items-center text-blue-500 justify-end`,
   cardStats: `inline-flex items-center text-sm text-gray-500`,
   statsWrapper: `flex justify-between py-0.5 px-2`,
   cardLinkWrapper: `m-2 mb-4 flex justify-end`,
+  cardImageWrapper: `aspect-w-3 aspect-h-2 overflow-hidden rounded-lg group-hover:opacity-75 lg:aspect-w-2 lg:aspect-h-1`,
 };
 
 const inlineStyle = {
@@ -168,4 +208,8 @@ function CardCategory({ children }) {
 
 function CardLinkWraper({ children }) {
   return <div className={style.cardLinkWrapper}>{children}</div>;
+}
+
+function CardImageWraper({ children }) {
+  return <div className={style.cardImageWrapper}>{children}</div>;
 }
