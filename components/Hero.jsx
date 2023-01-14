@@ -14,7 +14,6 @@ const Hero = () => {
                 <span className="text-6xl text-blue-200"> I am ed, </span> check
                 out what I am up to
                 <span className="text-2xl">
-                  {" "}
                   and take a peek into the genus mind of a web 3 / blockchain /
                   computer developer!
                 </span>
