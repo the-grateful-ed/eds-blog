@@ -2,6 +2,7 @@ import { allArticles } from "contentlayer/generated";
 import { NextSeo } from "next-seo";
 import { SingleArticle } from "../../components/SingleArticle";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import Comment from "../../components/comment";
 
 const SinglePost = ({ article }) => {
   const MDXContent = useMDXComponent(article.body.code);
@@ -21,6 +22,7 @@ const SinglePost = ({ article }) => {
       >
         <MDXContent />
       </SingleArticle>
+      <Comment />
     </>
   );
 };

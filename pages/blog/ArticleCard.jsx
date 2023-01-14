@@ -112,7 +112,7 @@ export default function ArticleCard({
     //   </Card>
     // </div>
 
-    <div class="flex flex-col rounded-xl bg-gray-50">
+    <div className="flex flex-col rounded-xl bg-gray-50">
       <CardImageWraper>
         <img
           src={image}
@@ -122,9 +122,9 @@ export default function ArticleCard({
           className="h-full w-full object-cover"
         />
       </CardImageWraper>
-      <div class="flex flex-auto flex-col gap-y-2  p-2 pb-4 ">
+      <div className="flex flex-auto flex-col gap-y-2  p-2 pb-4 ">
         <CardCategory>{category}</CardCategory>
-        <h3 class="text-semibold text-xl text-blue-900 line-clamp-1">
+        <h3 className="text-semibold text-xl text-blue-900 line-clamp-1">
           {title}
         </h3>
         <StatsWrapper>
@@ -134,7 +134,7 @@ export default function ArticleCard({
           <CgCalendarDates className="inline-flex items-center text-gray-500" />
           <CardStats>{dateTime}</CardStats>
         </StatsWrapper>
-        <p class="text-xl  text-black line-clamp-3">{description}</p>
+        <p className="text-xl  text-black line-clamp-3">{description}</p>
       </div>
       <CardLinkWraper>
         <CardLink>
