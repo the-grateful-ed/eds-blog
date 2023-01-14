@@ -1,7 +1,7 @@
 import { FaEnvelope } from "react-icons/fa";
 
-import Divider from "./Divider";
-import Button from "./Button";
+import Divider from "./atoms/Divider";
+import Button from "./atoms/Button";
 
 export default function NewsLetter() {
   return (
@@ -47,7 +47,7 @@ export default function NewsLetter() {
               We care about the protection of your data. Read our{" "}
               <a
                 href="#"
-                className="text-gray-800 font-medium underline"
+                className="font-medium text-gray-800 underline"
               >
                 Privacy Policy.
               </a>

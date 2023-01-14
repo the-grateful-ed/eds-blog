@@ -1,7 +1,7 @@
 import React from "react";
 import ArticleCard from "./ArticleCard";
 import { allArticles } from "contentlayer/generated";
-import Divider from "../../components/Divider";
+import Divider from "../../components/atoms/Divider";
 
 const BlogIndex = () => {
   const firstArticle = allArticles[0];

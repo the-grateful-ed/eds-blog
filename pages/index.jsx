@@ -4,8 +4,8 @@ import { allArticles } from "contentlayer/generated";
 import { select } from "../utils/select";
 import Hero from "../components/Hero";
 import NewsLetter from "../components/NewsLetter";
-import Divider from "components/Divider";
-import Button from "../components/Button";
+import Divider from "components/atoms/Divider";
+import Button from "../components/atoms/Button";
 
 export default function Home({ articles }) {
   return (
