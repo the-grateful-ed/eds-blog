@@ -9,7 +9,7 @@ const Comments = () => {
     url: "https://utteranc.es/client.js",
     theme: "github-dark",
     issueTerm: "url",
-    repo: "skarthikeyan96/next-blog-utterances",
+    repo: "the-grateful-ed/eds-blog",
     ref: comment,
   });
 
