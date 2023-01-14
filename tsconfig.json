@@ -24,6 +24,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".contentlayer/generated"
-, "contentlayer.config.js", "pages/index.jsx", "pages/contact/index.jsx"  ],
+, "contentlayer.config.js", "pages/index.jsx", "pages/contact/index.jsx", "pages/_app.jsx"  ],
   "exclude": ["node_modules"]
 }

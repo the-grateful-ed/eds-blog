@@ -22,6 +22,7 @@ const SinglePost = ({ article }) => {
       >
         <MDXContent />
       </SingleArticle>
+      <Comment />
     </>
   );
 };

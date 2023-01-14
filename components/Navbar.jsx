@@ -1,4 +1,3 @@
-import MenuItems from "./MenuItems";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { NavLink } from "./NavMenu";
@@ -23,11 +22,10 @@ export const Navbar = () => {
           className="flex items-center"
         >
           <div className="rotate-[-4deg] bg-blue-500 py-4 px-3 shadow-xl">
-                 <h1 className="rotate-[4deg] text-5xl font-extrabold tracking-tighter text-white">
-            edndacomputer
-          </h1>
+            <h1 className="rotate-[4deg] text-5xl font-extrabold tracking-tighter text-white">
+              edndacomputer
+            </h1>
           </div>
-     
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -46,7 +44,12 @@ export const Navbar = () => {
           <ul className="">
             <nav className="rounded-lg0 mt-4 flex flex-col p-4 sm:flex-row md:mt-0 md:space-x-1 md:border-0 md:bg-white">
               {pages.map((page) => (
-                <NavLink href={page.href}>{page.name}</NavLink>
+                <NavLink
+                  href={page.href}
+                  key={page.title}
+                >
+                  {page.name}
+                </NavLink>
               ))}
             </nav>
           </ul>
