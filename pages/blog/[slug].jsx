@@ -2,10 +2,12 @@ import { allArticles } from "contentlayer/generated";
 import { NextSeo } from "next-seo";
 import { SingleArticle } from "../../components/SingleArticle";
 import { useMDXComponent } from "next-contentlayer/hooks";
-import Comments from "../../components/Comments";
+import Comments from "../../components/comment/index";
+import { useRouter } from "next/router";
 
 const SinglePost = ({ article }) => {
   const MDXContent = useMDXComponent(article.body.code);
+  const router = useRouter();
 
   return (
     <>
@@ -22,7 +24,9 @@ const SinglePost = ({ article }) => {
       >
         <MDXContent />
       </SingleArticle>
-      <Comments />
+      <div className="mx-auto max-w-2xl">
+        <Comments />
+      </div>
     </>
   );
 };
